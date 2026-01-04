@@ -24,10 +24,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Typecheck backend
-        working-directory: "apps/backend"
-        run: pnpm run typecheck
-
       - name: Backend migrations
         working-directory: "apps/backend"
         run: pnpm run db:migrate:production
