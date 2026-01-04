@@ -5,7 +5,7 @@ import { DottedGlowBackground } from "components/ui/dotted-glow-background";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Sendit | Temp Email" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
