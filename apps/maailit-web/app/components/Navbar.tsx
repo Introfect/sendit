@@ -25,7 +25,7 @@ export default function Navbar() {
             <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
           </svg>
         </motion.div>
-        <p className="text-lg text-slate-50 font-bold">Maailit</p>
+        <p className="text-lg text-slate-50 font-bold">Sendit</p>
       </Link>
       <div className="flex items-center gap-2">
         <motion.div className="flex items-center gap-1" initial={false}>

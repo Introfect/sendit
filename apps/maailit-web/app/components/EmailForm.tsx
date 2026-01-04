@@ -61,7 +61,8 @@ export default function EmailForm({
             </h1>
             <p className="text-sm text-neutral-400 leading-relaxed">
               enter the slug of your required email and hit enter to start
-              receiving emails on the mail, your id will be example@maailit.com
+              receiving emails on the mail, your id will be
+              example@oyeaayushaman.dev
             </p>
             <p className="text-xs text-neutral-500 italic">
               We dont care about mobile users get a bigger screen or dont use
