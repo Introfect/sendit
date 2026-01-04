@@ -18,10 +18,10 @@ app.post('/test/:email', async (c) => {
 	const email = c.req.param('email');
 
 	const fromAddress = `${crypto.randomUUID().slice(4)}@gmail.com`;
-	const toAddress = `${email}@maailit.com`;
+	const toAddress = `${email}@oyeaayushaman.dev`;
 	const subject = `Test email from ${fromAddress}`;
 
-	const emailContent = `<div dir="ltr">Click on this link to forget your password <a href="https://maailit.com/reset-password?token=123456789">https://maailit.com/reset-password?token=123456789</a></div>`;
+	const emailContent = `<div dir="ltr">Click on this link to forget your password <a href="https://oyeaayushaman.dev/reset-password?token=123456789">https://oyeaayushaman.dev/reset-password?token=123456789</a></div>`;
 
 	const fakeEmailContent: EmailQueueMessage = { from: fromAddress, to: toAddress, html: emailContent, subject: subject };
 

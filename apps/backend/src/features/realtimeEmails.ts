@@ -55,7 +55,7 @@ export async function broadcastEmails(emails: EmailRow[], env: Env) {
 	const nameToEmails = new Map<string, EmailRow[]>();
 
 	for (const email of emails) {
-		const name = email.to.replace(`@maailit.com`, '');
+		const name = email.to.replace(`@oyeaayushaman.dev`, '');
 
 		if (nameToEmails.has(name)) {
 			const existingEmails = nameToEmails.get(name)!;
@@ -85,7 +85,7 @@ export async function deleteEmailsFromRooms(emails: { id: number; to: string }[]
 	const nameToEmails = new Map<string, number[]>();
 
 	for (const email of emails) {
-		const name = email.to.replace(`@maailit.com`, '');
+		const name = email.to.replace(`@oyeaayushaman.dev`, '');
 
 		if (nameToEmails.has(name)) {
 			const existingEmails = nameToEmails.get(name)!;

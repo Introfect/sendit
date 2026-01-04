@@ -33,7 +33,7 @@ export class EmailTable {
 	}
 
 	#getToEmail(email: string) {
-		return `${email}@maailit.com`;
+		return `${email}@oyeaayushaman.dev`;
 	}
 }
 
