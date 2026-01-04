@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "maailit-backend"
+name = "sendit-backend"
 main = "src/index.ts"
 compatibility_date = "2024-10-12"
 compatibility_flags = [ "nodejs_compat" ]
@@ -44,8 +44,8 @@ enabled = true
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#d1-databases
 [[d1_databases]]
 binding = "DB"
-database_name = "maailit"
-database_id = "622688ef-ae58-497b-83a8-ba55e3391fda"
+database_name = "sendit"
+database_id = "95375768-3004-4d0a-84cf-dfd55ab7cffd"
 migrations_dir = "migrations"
 
 # Bind a dispatch namespace. Use Workers for Platforms to deploy serverless functions programmatically on behalf of your customers.
@@ -89,12 +89,12 @@ new_sqlite_classes = ["RealtimeEmails"]
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#queues
 [[queues.producers]]
 binding = "EMAIL_QUEUE"
-queue = "maailit-emails"
+queue = "sendit-emails"
 
 # Bind a Queue consumer. Queue Consumers can retrieve tasks scheduled by Producers to act on them.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#queues
 [[queues.consumers]]
-queue = "maailit-emails"
+queue = "sendit-emails"
 max_batch_timeout = 1
 max_batch_size = 10
 

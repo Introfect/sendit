@@ -54,7 +54,9 @@ export default {
 
 		return;
 	},
+
 	async email(message, env) {
+		console.log("new email received");
 		const messageContent = await streamToArrayBuffer(message.raw, message.rawSize);
 		const email = await EmailParser.parse(messageContent);
 

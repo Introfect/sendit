@@ -30,7 +30,7 @@ export default function Inbox() {
   const { slug } = useParams();
 
   usePartySocket({
-    host: "maailit-backend.nivekithan.workers.dev",
+    host: "sendit-backend.aayushmanpratap333.workers.dev",
     room: slug,
     party: "realtime-emails",
 
